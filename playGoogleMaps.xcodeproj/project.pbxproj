@@ -14,6 +14,7 @@
 		377BA1AB1B6C127A00B1870D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377BA1AA1B6C127A00B1870D /* Images.xcassets */; };
 		377BA1AE1B6C127A00B1870D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377BA1AC1B6C127A00B1870D /* LaunchScreen.xib */; };
 		377BA1BA1B6C127A00B1870D /* playGoogleMapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377BA1B91B6C127A00B1870D /* playGoogleMapsTests.swift */; };
+		A9DA541C11D297AEB35FDB28 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842032A73613E4F50E1C97B0 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FBE07E10FCDFF4BDD02D970 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "playGoogleMaps/Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		377BA19B1B6C127A00B1870D /* playGoogleMaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playGoogleMaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377BA19F1B6C127A00B1870D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377BA1A01B6C127A00B1870D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		377BA1B31B6C127A00B1870D /* playGoogleMapsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playGoogleMapsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		377BA1B81B6C127A00B1870D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377BA1B91B6C127A00B1870D /* playGoogleMapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playGoogleMapsTests.swift; sourceTree = "<group>"; };
+		842032A73613E4F50E1C97B0 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9DACFE132838BF4EB7A954A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "playGoogleMaps/Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9DA541C11D297AEB35FDB28 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +69,8 @@
 				377BA19D1B6C127A00B1870D /* playGoogleMaps */,
 				377BA1B61B6C127A00B1870D /* playGoogleMapsTests */,
 				377BA19C1B6C127A00B1870D /* Products */,
+				C40D598E63D0F59159B92BF5 /* Pods */,
+				EDE52DF778127010FDFE57AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +122,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C40D598E63D0F59159B92BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FBE07E10FCDFF4BDD02D970 /* Pods.debug.xcconfig */,
+				E9DACFE132838BF4EB7A954A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EDE52DF778127010FDFE57AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842032A73613E4F50E1C97B0 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,9 +146,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377BA1BD1B6C127A00B1870D /* Build configuration list for PBXNativeTarget "playGoogleMaps" */;
 			buildPhases = (
+				0D4581D35BE6F893CE3AE491 /* Check Pods Manifest.lock */,
 				377BA1971B6C127A00B1870D /* Sources */,
 				377BA1981B6C127A00B1870D /* Frameworks */,
 				377BA1991B6C127A00B1870D /* Resources */,
+				DA81E1782D9A5FBD06205442 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,6 +235,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D4581D35BE6F893CE3AE491 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DA81E1782D9A5FBD06205442 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/playGoogleMaps/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		377BA1971B6C127A00B1870D /* Sources */ = {
@@ -342,6 +401,7 @@
 		};
 		377BA1BE1B6C127A00B1870D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FBE07E10FCDFF4BDD02D970 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = playGoogleMaps/Info.plist;
@@ -352,6 +412,7 @@
 		};
 		377BA1BF1B6C127A00B1870D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DACFE132838BF4EB7A954A /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = playGoogleMaps/Info.plist;
@@ -413,6 +474,7 @@
 				377BA1BF1B6C127A00B1870D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		377BA1C01B6C127A00B1870D /* Build configuration list for PBXNativeTarget "playGoogleMapsTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +483,7 @@
 				377BA1C21B6C127A00B1870D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
